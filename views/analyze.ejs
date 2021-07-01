@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('partials/head'); -%>
+	</head>
+	
+	<body>
+		<%- include('partials/menu'); -%>
+		
+		<div class="container-fluid bg-3">
+			<h3><%= page %></h3><br>
+			<form action = "/api/models" enctype="multipart/form-data" method = "POST">
+				<div class = "form-group">
+					<label for = "csvfile">Select Your Dataset:</label>
+					<input type = "file" name = "csvfile">
+				</div>
+				<div class = "radio">
+					<label>
+						<input type="radio" value="classification" name="datatype">
+						Classification
+					</label>
+				</div>
+				<div class = "radio">
+					<label>
+						<input type="radio" value="regression" name="datatype">
+						Regression
+					</label>
+				</div>
+				<button type="submit" class="btn btn-default">Analyze</button>
+			</form>
+		</div>
+	</body>
+	<%- include('partials/script'); -%>
+</html>

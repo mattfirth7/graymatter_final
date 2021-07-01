@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('partials/head'); -%>
+	</head>
+	
+	<body class="bg-3">
+		<%- include('partials/menu'); -%>
+		
+		<form action = "/api/models/model-name" method = "GET">
+			<div class="form-row align-items-center">
+				<div class="col-auto my-1">
+					<label class="mr-sm-2" for="inlineFormCustomSelect">Model</label>
+					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name = "name">
+						<option selected>Model</option>
+						<% models.forEach(function(model){ %>
+							<option><%= model %></option>
+						<% }) %>
+					</select>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-default">Open WebApp</button>
+		</form>
+	</body>
+	<%- include('partials/script'); -%>
+</html>

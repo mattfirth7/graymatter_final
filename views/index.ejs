@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('partials/head'); -%>
+	</head>
+	
+	<body class="bg-3">
+		<%- include('partials/menu'); -%>
+		
+		<div class="container-fluid bg-3 text-center">
+			<h3><%= page %></h3><br>
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>ABOUT</h4>
+					<p>Welcome to GrayMatter. We are building an AutoML platform aimed to drastically reduce the barrier to entry for developing machine learning solutions.</p>
+				</div>
+				<div class="col-sm-4">
+					<h4>DEMO</h4>
+					<p>Demo coming soon</p>
+					<p>Please do not use yet. We have 0 security in place to protect data and models</p>
+				</div>
+				<div class="col-sm-4">
+					<h4>How it Works</h4>
+					<p>Simply upload a CSV file of your dataset and our software will do the rest. Train and test dataset splitting, model selection, and results verification</p>
+					<h4>COMING SOON</h4>
+					<p>We will soon be adding a custom developed feature selection method to help reduce redundancy in input data. We will also be putting in place a way to use our platform to predict future results. We also aim to speed up processing time through distributing backend processes through Google Cloud.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<%- include('partials/script'); -%>
+</html>

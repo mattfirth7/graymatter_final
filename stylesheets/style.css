@@ -1,0 +1,36 @@
+.bg-3 { 
+      background-color: #686868 !important;
+      color: #ffffff !important;
+  }
+.container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+.navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+.active>a {
+    color: #1abc9c !important;;
+  }
+
+body {
+	background-color: #686868;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+}
+#inp {
+	overflow:hidden;
+	text-align: center;
+	margin: auto;
+}
